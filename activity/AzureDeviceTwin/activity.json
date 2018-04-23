@@ -1,0 +1,28 @@
+{
+  "name": "AzureDeviceTwin",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "This activity will update the device shadow in AxureIOThub",
+  "author": "Krishna Chaitanya",
+  "inputs":[
+  {
+    "name": "thingName",
+    "type": "string",
+    "required": true
+  },
+    {
+      "name": "ConnectionString",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "desired",
+      "type": "string"
+    },
+    {
+      "name": "reported",
+      "type": "params"
+    }
+  ]
+}
