@@ -22,8 +22,8 @@ import (
 var log = logger.GetLogger("activity-tibco-rest")
 
 const (
-	ivDeviceName       = "DeviceName"
-	ivazureEndpoint    = "azureEndpoint"
+	ivDeviceName = "DeviceName"
+
 	ivConnectionString = "ConnectionString"
 	ivDesired          = "desired"
 	ivReported         = "reported"
@@ -68,7 +68,7 @@ func (a *azureDT) Metadata() *activity.Metadata {
 func (a *azureDT) Eval(context activity.Context) (done bool, err error) {
 
 	DeviceName := context.GetInput(ivDeviceName).(string)
-	ConnectionString := context.GetInput(ivazureEndpoint).(string)
+	ConnectionString := context.GetInput(ivConnectionString).(string)
 	client, err := NewIotHubHTTPClientFromConnectionString(ConnectionString)
 	if err != nil {
 		log.Error("Error creating http client from connection string", err)

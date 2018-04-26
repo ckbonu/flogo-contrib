@@ -2,7 +2,8 @@
   "name": "AzureDeviceTwin",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "description": "This activity will update the device shadow in AxureIOThub",
+  "ref":"github.com/ckbonu/flogo-contrib/activity/AzureDeviceTwin",
+  "description": "This activity will update the device shadow in AzureIOThub",
   "author": "Krishna Chaitanya",
   "inputs":[
   {
@@ -13,9 +14,6 @@
     {
       "name": "ConnectionString",
       "type": "string"
-    },
-    {"name": "azureEndpoint",
-     "type": "string"
     }
   ],
   "outputs": [
