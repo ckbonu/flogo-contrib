@@ -1,4 +1,4 @@
-package AzureDeviceTwin
+package azuredevicetwin
 
 import (
 	"io/ioutil"
