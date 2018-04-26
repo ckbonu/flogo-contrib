@@ -22,8 +22,7 @@ import (
 var log = logger.GetLogger("activity-tibco-rest")
 
 const (
-	ivDeviceName = "DeviceName"
-
+	ivDeviceName       = "DeviceName"
 	ivConnectionString = "ConnectionString"
 	ivDesired          = "desired"
 	ivReported         = "reported"
@@ -87,8 +86,8 @@ func (a *azureDT) Eval(context activity.Context) (done bool, err error) {
 // Utils
 
 // NewIotHubHTTPClientFromConnectionString creates new client from connection string
-func parseConnectionString(connString string) (hostName, sharedAccessKey, sharedAccessKeyName, deviceID, error) {
-	url, err := url.ParseQuery(connString)
+func parseConnectionString(ConnectionString string) (hostName, sharedAccessKey, sharedAccessKeyName, deviceID, error) {
+	url, err := url.ParseQuery(ConnectionString)
 	if err != nil {
 		return "", "", "", "", err
 	}
