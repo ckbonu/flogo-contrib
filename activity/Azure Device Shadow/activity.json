@@ -1,0 +1,30 @@
+{
+    "name": "tibco-azureiotdeck",
+    "type": "flogo:activity",
+    "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/azureiotdeck",
+    "version": "0.0.1",
+    "title": "Update Azure Device Shadow",
+    "description": "Simple Azure IoT",
+    "homepage": "https://github.com/TIBCOSoftware/flogo-contrib/tree/master/activity/azureiotdeck",
+    "input":[
+      {
+        "name": "thingName",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "azureEndpoint",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "desired",
+        "type": "params"
+      },
+      {
+        "name": "reported",
+        "type": "params"
+      }
+    ]
+  }
+  
