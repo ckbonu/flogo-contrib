@@ -57,6 +57,7 @@ func (a *azureDT) Eval(context activity.Context) (done bool, err error)  {
 
 	DeviceName := context.GetInput(ivDeviceName).(string)
 	ConnectionString := context.GetInput(ivazureEndpoint).(string)
+	azureEndpoint := context.GetInput(ivazureEndpoint).(string)
 
 }
 func parseConnectionString(connString string) (hostName, sharedAccessKey, sharedAccessKeyName, deviceID, error) {

@@ -13,6 +13,9 @@
     {
       "name": "ConnectionString",
       "type": "string"
+    },
+    {"name": "azureEndpoint",
+     "type": "string"
     }
   ],
   "outputs": [
