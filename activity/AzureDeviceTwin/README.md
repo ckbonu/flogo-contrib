@@ -4,11 +4,11 @@ This activity allows you to update a device shadow on AzureIotHub.
 ## Installation
 
 ```bash
-flogo install github.com/ckbonu/flogo-contrib/tree/master/activity/AzureDeviceTwin
+flogo install github.com/ckbonu/flogo-contrib/tree/master/activity/azuredevicetwin
 ```
 Link for flogo web:
 ```
-https://github.com/ckbonu/flogo-contrib/tree/master/activity/AzureDeviceTwin
+https://github.com/ckbonu/flogo-contrib/tree/master/activity/azuredevicetwin
 ```
 
 ## Schema
@@ -24,9 +24,6 @@ Inputs and Outputs:
     {
       "name": "ConnectionString",
       "type": "string"
-    },
-    {"name": "azureEndpoint",
-     "type": "string"
     }
   ],
   "outputs": [
