@@ -13,14 +13,11 @@
   },
     {
       "name": "ConnectionString",
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   ],
   "outputs": [
-    {
-      "name": "desired",
-      "type": "any"
-    },
     {
       "name": "reported",
       "type": "any"

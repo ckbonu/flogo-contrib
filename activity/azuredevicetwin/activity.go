@@ -24,7 +24,6 @@ var log = logger.GetLogger("activity-tibco-rest")
 const (
 	ivDeviceName       = "DeviceName"
 	ivConnectionString = "ConnectionString"
-	ivDesired          = "desired"
 	ivReported         = "reported"
 
 	maxIdleConnections int = 100
