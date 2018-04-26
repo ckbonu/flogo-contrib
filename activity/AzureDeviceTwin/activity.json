@@ -19,11 +19,11 @@
   "outputs": [
     {
       "name": "desired",
-      "type": "string"
+      "type": "any"
     },
     {
       "name": "reported",
-      "type": "params"
+      "type": "any"
     }
   ]
 }
